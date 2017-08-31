@@ -1,0 +1,117 @@
+* {
+	padding: 0;
+	margin: 0;
+	transition: all 0.3s ease;
+	font-family: monospace;
+}
+
+body {
+	overflow: hidden;
+}
+
+#login, .myGame {
+	margin: auto;
+	width: 600px;
+	text-align: center;
+	padding-top: calc(50% - 600px);
+}
+
+.myGame {
+	padding-top: 30px;
+}
+
+#myBoard {
+	padding-left: 50px;
+}
+.p1 {
+	width: 500px;
+	padding-left: 50px;
+	padding-bottom: 10px;
+	text-align: right;
+}
+.p2 {
+	width: 500px;
+	padding-left: 50px;
+	padding-top: 10px;
+	text-align: left;
+}
+#p1 {
+	color: #2a7d31;
+	font-size: 1.4em;
+}
+#p2 {
+	color: #2a7d31;
+	font-size: 1.4em;
+}
+#playAgain {
+	position: absolute;
+    top: 45%;
+    right: 20px;
+    display: none;
+}
+#playAgain.show {
+	display: block;
+}
+.loginForm {
+	margin: 20px;
+}
+
+.loginForm input {
+	padding: 6px 12px;
+	font-size: 1.2em;
+	border-radius: 3px;
+	border: 1px solid gray;
+}
+
+.loginForm button {
+	padding: 6px 12px;
+	background: #237cb5;
+	color: white;
+	font-size: 1.2em;
+	border: none;
+	border-radius: 3px;
+}
+
+.loginForm button:hover {
+	background: #175a86;
+}
+#color {
+	background: #32e373;
+	border: none;
+	border-radius: 3px;
+	padding-left: 6px;
+}
+option {
+	padding: 6px 12px;
+}
+#gameOver {
+	width: 600px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 6em;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+	color: white;
+	text-align: center;
+	text-shadow: 0px 0px 4px black;
+	display: none;
+}
+
+#gameOver.show {
+	display: block;
+	animation: pop 0.4s ease-in-out forwards;
+}
+
+@keyframes pop {
+	0% {
+		transform: scale(0.2);
+	}
+	90% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

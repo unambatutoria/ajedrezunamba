@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<title>Ajedres Unamba </title>
+	<link rel="stylesheet" href="css/chessboard-0.3.0.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="login">
+		<img src="img/logo.png">
+		<div class="loginForm">
+			<input type="text" id="username" placeholder="Nombre" onkeyup="checkUsername(event)">
+			<select id="color">
+				<option value="white">Blanco</option>
+				<option value="black">Negro</option>
+			</select>
+			<button onclick="addPlayer()">Iniciar</button>
+		</div>
+	</div>
+	<div class="myGame"> 
+		<div id="status"></div>
+		<div class="p1"><b id="p1"></b></div>
+		<div id="myBoard" style="width: 500px"></div>
+		<div class="p2"><b id="p2"></b></div>
+		<button id="playAgain" onClick="newGame()">Jugar de Nuevo</button>
+		<div id="joinLink"></div>
+		<div id="gameOver">Juego Finalizado</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/socket.js"></script>
+	<script src="js/chess.js"></script>
+	<script src="js/chessboard-0.3.0.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
